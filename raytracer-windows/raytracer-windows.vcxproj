@@ -18,6 +18,39 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Camera.h" />
+    <ClInclude Include="include\Film.h" />
+    <ClInclude Include="include\FreeImage.h" />
+    <ClInclude Include="include\Lights\DirectionalLight.h" />
+    <ClInclude Include="include\Lights\LightBase.h" />
+    <ClInclude Include="include\Lights\PointLight.h" />
+    <ClInclude Include="include\Primitives\Plane.h" />
+    <ClInclude Include="include\Primitives\PrimitiveBase.h" />
+    <ClInclude Include="include\Primitives\Sphere.h" />
+    <ClInclude Include="include\Primitives\Triangle.h" />
+    <ClInclude Include="include\Ray.h" />
+    <ClInclude Include="include\RayTracer.h" />
+    <ClInclude Include="include\Sampler.h" />
+    <ClInclude Include="include\Scene.h" />
+    <ClInclude Include="include\Typedefs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\Film.cpp" />
+    <ClCompile Include="src\Lights\DirectionalLight.cpp" />
+    <ClCompile Include="src\Lights\LightBase.cpp" />
+    <ClCompile Include="src\Lights\PointLight.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Primitives\Plane.cpp" />
+    <ClCompile Include="src\Primitives\PrimitiveBase.cpp" />
+    <ClCompile Include="src\Primitives\Sphere.cpp" />
+    <ClCompile Include="src\Primitives\Triangle.cpp" />
+    <ClCompile Include="src\Ray.cpp" />
+    <ClCompile Include="src\RayTracer.cpp" />
+    <ClCompile Include="src\Sampler.cpp" />
+    <ClCompile Include="src\Scene.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -133,38 +166,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="DirectionalLight.cpp" />
-    <ClCompile Include="Film.cpp" />
-    <ClCompile Include="Light.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Plane.cpp" />
-    <ClCompile Include="PointLight.cpp" />
-    <ClCompile Include="PrimitiveBase.cpp" />
-    <ClCompile Include="Ray.cpp" />
-    <ClCompile Include="RayTracer.cpp" />
-    <ClCompile Include="Sampler.cpp" />
-    <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="Sphere.cpp" />
-    <ClCompile Include="Triangle.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Camera.h" />
-    <ClInclude Include="DirectionalLight.h" />
-    <ClInclude Include="Film.h" />
-    <ClInclude Include="LightBase.h" />
-    <ClInclude Include="Plane.h" />
-    <ClInclude Include="PointLight.h" />
-    <ClInclude Include="PrimitiveBase.h" />
-    <ClInclude Include="Ray.h" />
-    <ClInclude Include="RayTracer.h" />
-    <ClInclude Include="Sampler.h" />
-    <ClInclude Include="Scene.h" />
-    <ClInclude Include="Sphere.h" />
-    <ClInclude Include="Triangle.h" />
-    <ClInclude Include="Typedefs.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
