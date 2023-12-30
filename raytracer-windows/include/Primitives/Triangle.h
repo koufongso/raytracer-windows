@@ -1,10 +1,10 @@
 #pragma once
 #include <glm/glm.hpp>
 #include "Typedefs.h"
-#include "Primitive.h"
+#include "PrimitiveBase.h"
 
 
-class Triangle : public Primitive
+class Triangle : public PrimitiveBase
 {
 public:
 	Triangle(Vertex v1, Vertex v2, Vertex v3);

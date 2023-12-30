@@ -1,6 +1,6 @@
 #pragma once
-#include "Light.h"
-class DirectionalLight : public Light
+#include "LightBase.h"
+class DirectionalLight : public LightBase
 {
 public:
 	DirectionalLight(Vector direction);

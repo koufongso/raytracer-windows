@@ -141,7 +141,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Plane.cpp" />
     <ClCompile Include="PointLight.cpp" />
-    <ClCompile Include="Primitive.cpp" />
+    <ClCompile Include="PrimitiveBase.cpp" />
     <ClCompile Include="Ray.cpp" />
     <ClCompile Include="RayTracer.cpp" />
     <ClCompile Include="Sampler.cpp" />
@@ -153,10 +153,10 @@
     <ClInclude Include="Camera.h" />
     <ClInclude Include="DirectionalLight.h" />
     <ClInclude Include="Film.h" />
-    <ClInclude Include="Light.h" />
+    <ClInclude Include="LightBase.h" />
     <ClInclude Include="Plane.h" />
     <ClInclude Include="PointLight.h" />
-    <ClInclude Include="Primitive.h" />
+    <ClInclude Include="PrimitiveBase.h" />
     <ClInclude Include="Ray.h" />
     <ClInclude Include="RayTracer.h" />
     <ClInclude Include="Sampler.h" />

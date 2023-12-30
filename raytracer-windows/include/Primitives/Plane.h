@@ -1,13 +1,13 @@
 #pragma once
-#include "Primitive.h"
+#include "PrimitiveBase.h"
 #include <glm/glm.hpp>
 #include "Typedefs.h"
 class Plane :
-    public Primitive
+    public PrimitiveBase
 {
 public:
     Plane(const Vertex &v1,const Vertex &v2, const Vertex& v3);
-    Plane(const Point& center, const Vector& normal, float h, float w);
+    //Plane(const Point& center, const Vector& normal, float h, float w);
 
     void moveTo(const Point& newCenter) override;
     bool intersect(const Ray& ray, Intersection* result) override;

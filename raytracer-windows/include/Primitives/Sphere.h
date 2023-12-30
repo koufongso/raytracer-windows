@@ -1,8 +1,8 @@
 #pragma once
 #include <glm/glm.hpp>
-#include "Primitive.h"
+#include "PrimitiveBase.h"
 #include "Typedefs.h"
-class Sphere : public Primitive
+class Sphere : public PrimitiveBase
 {
 public:
 	Sphere();

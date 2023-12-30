@@ -4,11 +4,11 @@
 #include "Ray.h"
 #include "Typedefs.h"
 
-class Primitive;
+class PrimitiveBase;
 
 struct Intersection
 {
-	Primitive* hitPrimitive = nullptr; // which primitive the ray hit
+	PrimitiveBase* hitPrimitive = nullptr; // which primitive the ray hit
 
 	float dist;
 	Point hitPosition;
@@ -16,7 +16,7 @@ struct Intersection
 };
 
 
-class Primitive
+class PrimitiveBase
 {
 public:
 	virtual bool intersect(const Ray& ray, Intersection *result);

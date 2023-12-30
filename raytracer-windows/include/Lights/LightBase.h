@@ -4,7 +4,7 @@
 #include "Ray.h"
 #include "Typedefs.h"
 
-class Light
+class LightBase
 {
 public:
 	virtual Ray generateRayLight(Point position) { 
