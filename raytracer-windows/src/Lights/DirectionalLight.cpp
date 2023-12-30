@@ -1,4 +1,4 @@
-#include "DirectionalLight.h"
+#include "Lights/DirectionalLight.h"
 
 DirectionalLight::DirectionalLight(Vector direction) {
 	this->direction = glm::normalize(direction);

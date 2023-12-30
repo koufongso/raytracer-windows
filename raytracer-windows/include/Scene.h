@@ -1,10 +1,10 @@
 #pragma once
 #include <vector>
 #include "Typedefs.h"
-#include "Primitive.h"
+#include "Primitives/PrimitiveBase.h"
 #include "Camera.h"
 #include "Film.h"
-#include "Light.h"
+#include "Lights/LightBase.h"
 #include "RayTracer.h"
 
 class Scene
@@ -16,8 +16,8 @@ public:
 	void render();
 	
 	std::vector<Camera*> camera_list;
-	std::vector<Primitive*> objects;
-	std::vector<Light*> light_sources;
+	std::vector<PrimitiveBase*> objects;
+	std::vector<LightBase*> light_sources;
 
 	RayTracer raytracer;
 

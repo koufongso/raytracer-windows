@@ -24,9 +24,11 @@
     <ClInclude Include="include\FreeImage.h" />
     <ClInclude Include="include\Lights\DirectionalLight.h" />
     <ClInclude Include="include\Lights\LightBase.h" />
+    <ClInclude Include="include\Lights\Lights.h" />
     <ClInclude Include="include\Lights\PointLight.h" />
     <ClInclude Include="include\Primitives\Plane.h" />
     <ClInclude Include="include\Primitives\PrimitiveBase.h" />
+    <ClInclude Include="include\Primitives\Primitives.h" />
     <ClInclude Include="include\Primitives\Sphere.h" />
     <ClInclude Include="include\Primitives\Triangle.h" />
     <ClInclude Include="include\Ray.h" />

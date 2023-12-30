@@ -22,8 +22,8 @@ void RayTracer::traceRay(const Ray & ray, int depth, Color &color){
 
 	Point hitPosition_ = result.hitPosition + ((result.dist * 0.001f) * result.normalVec); //move the intersection a little bit above the surface to avoid numerical issue
 	if (light_sources != nullptr) {
-		const std::vector<Light*> light_source_ref = *light_sources;
-		for (Light* light_ptr : light_source_ref) {
+		const std::vector<LightBase*> light_source_ref = *light_sources;
+		for (LightBase* light_ptr : light_source_ref) {
 			Ray light_ray = light_ptr->generateRayLight(hitPosition_);	// generate a light ray from the hit position
 			if (!intersectObjects(light_ray)) {
 				// visiable, apply phong reflection model
@@ -59,8 +59,8 @@ void RayTracer::traceRay(const Ray & ray, int depth, Color &color){
 
 bool RayTracer::intersectObjects(const Ray& ray) {
 	if (objects != nullptr) {
-		const std::vector<Primitive*> objects_ref = *objects;
-		for (Primitive* obj_ptr : objects_ref) {
+		const std::vector<PrimitiveBase*> objects_ref = *objects;
+		for (PrimitiveBase* obj_ptr : objects_ref) {
 			if (obj_ptr->intersect(ray, nullptr)) {
 				return true;
 			}
@@ -74,8 +74,8 @@ bool RayTracer::intersectObjects(const Ray& ray, Intersection *result) {
 	float min_dist = INFINITY;
 	bool intersect = false;
 	if (objects != nullptr) {
-		const std::vector<Primitive*> objects_ref = *objects;
-		for (Primitive* obj_ptr : objects_ref) {
+		const std::vector<PrimitiveBase*> objects_ref = *objects;
+		for (PrimitiveBase* obj_ptr : objects_ref) {
 			Intersection res;
 			if ((intersect = obj_ptr->intersect(ray, &res)) && res.dist < min_dist) {
 				min_dist = res.dist;

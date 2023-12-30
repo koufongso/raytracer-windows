@@ -1,4 +1,4 @@
-#include "Sphere.h"
+#include "Primitives/Sphere.h"
 
 Sphere::Sphere() { center = Point(0.0f, 0.0f,0.0f); radius = 1.0f; }
 Sphere::Sphere(Point center, float radius):center(center), radius(radius) {}

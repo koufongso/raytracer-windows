@@ -1,12 +1,10 @@
 #include <iostream>
 #include "Scene.h"
-#include "Sphere.h"
-#include "Triangle.h"
-#include "Plane.h"
 #include "Camera.h"
-#include "PointLight.h"
-#include "DirectionalLight.h"
 #include "Typedefs.h"
+#include "../include/Primitives/Primitives.h"
+#include "../include/Lights/Lights.h"
+
 
 int main()
 {

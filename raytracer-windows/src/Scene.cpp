@@ -6,11 +6,11 @@ Scene::Scene() {
 }
 
 Scene::~Scene() {
-	for (Light* light_source_ptr : light_sources) {
+	for (LightBase* light_source_ptr : light_sources) {
 		delete light_source_ptr;
 	}
 
-	for (Primitive* obj_ptr : objects) {
+	for (PrimitiveBase* obj_ptr : objects) {
 		delete obj_ptr;
 	}
 }

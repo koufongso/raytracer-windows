@@ -1,4 +1,4 @@
-#include "PointLight.h"
+#include "Lights/PointLight.h"
 
 PointLight::PointLight(Point position) :position(position) {};
 

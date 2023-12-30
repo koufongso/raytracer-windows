@@ -1,4 +1,4 @@
-#include "PrimitiveBase.h"
+#include "Primitives/PrimitiveBase.h"
 
 void PrimitiveBase::moveTo(const Point &newCenter) {
 	Vector translationVec = center - newCenter;

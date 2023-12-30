@@ -4,8 +4,8 @@
 
 #include "Typedefs.h"
 #include "Ray.h"
-#include "Primitive.h"
-#include "Light.h"
+#include "Primitives/PrimitiveBase.h"
+#include "Lights/LightBase.h"
 
 
 class RayTracer
@@ -18,8 +18,8 @@ public:
 	bool intersectObjects(const Ray& ray, Intersection *ressult);		// check if a ray hit an object and return the result
 
 	int MAX_DEPTH = 3;
-	std::vector<Light*> *light_sources;
-	std::vector<Primitive*> *objects;
+	std::vector<LightBase*> *light_sources;
+	std::vector<PrimitiveBase*> *objects;
 
 };
 

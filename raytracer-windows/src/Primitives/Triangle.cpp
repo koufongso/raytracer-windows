@@ -1,4 +1,4 @@
-#include "Triangle.h"
+#include "Primitives/Triangle.h"
 
 Triangle::Triangle(Vertex v1, Vertex v2, Vertex v3) :v1(v1), v2(v2), v3(v3) {
 	center = Point(.0f, .0f, .0f);
