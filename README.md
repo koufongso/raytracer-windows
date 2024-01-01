@@ -1,7 +1,9 @@
 # raytracer-windows
 
-Raytracing learning project
+Raytracing learning project.
 
-Demo:
+Phong shading model (old implementation)            |  Whitted shading model (current implementation)
+:-------------------------:|:-------------------------:
+![](./raytracer-windows/test.png)  |  ![](./raytracer-windows/test_whitted.png)
 
-![demo](./raytracer-windows/test.png)
+
