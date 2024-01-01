@@ -3,6 +3,7 @@
 #include <glm/glm.hpp>
 #include "Ray.h"
 #include "Typedefs.h"
+#include "RayTracingStructs.h"
 
 class LightBase
 {

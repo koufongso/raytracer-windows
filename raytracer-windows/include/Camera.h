@@ -2,6 +2,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include "Typedefs.h"
+#include "RayTracingStructs.h"
 #include "Ray.h"
 #include "Sampler.h"
 #include "RayTracer.h"

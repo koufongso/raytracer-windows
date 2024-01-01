@@ -6,7 +6,6 @@ public:
 	DirectionalLight(Vector direction);
 	Ray generateRayLight(Point position) override;
 
-	Color color;
 	Vector direction;
 };
 

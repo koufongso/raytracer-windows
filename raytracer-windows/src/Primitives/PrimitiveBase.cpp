@@ -20,20 +20,3 @@ void PrimitiveBase::setObjectToWorld(const Transformation& T) {
 bool PrimitiveBase::intersect(const Ray& ray, Intersection *result) {
 	return false;
 }
-
-
-BRDF PrimitiveBase::getBRDF() {
-	return material.brdf;
-}
-
-void PrimitiveBase::setBRDF(BRDF new_brdf) {
-	material.brdf = new_brdf;
-}
-
-float PrimitiveBase::getShiness() {
-	return material.shiness;
-}
-
-void PrimitiveBase::setShiness(float  s) {
-	material.shiness = s;
-}

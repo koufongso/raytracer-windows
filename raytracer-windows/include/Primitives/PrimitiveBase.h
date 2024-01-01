@@ -1,10 +1,12 @@
 #pragma once
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-#include "Ray.h"
-#include "Typedefs.h"
+#include "../Ray.h"
+#include "../Typedefs.h"
+#include "../Materials/MaterialBase.h"
 
 class PrimitiveBase;
+class Ray;
 
 struct Intersection
 {
@@ -12,14 +14,15 @@ struct Intersection
 
 	float dist;
 	Point hitPosition;
-	Vector normalVec;
+	Vector outward_normal; // always point against the ray direction 
 };
 
 
 class PrimitiveBase
 {
 public:
-	virtual bool intersect(const Ray& ray, Intersection *result);
+	virtual bool intersect(const Ray& ray, Intersection* result);
+	//virtual bool intersect(const Ray& ray, Intersection *result);
 	
 	// move object to global/world coordinate
 	virtual void moveTo(const Point& newOrigin);
@@ -34,16 +37,10 @@ public:
 
 	void setWorldToObject(const Transformation& T);
 	void setObjectToWorld(const Transformation& T);
-
-	// material
-	BRDF getBRDF();
-	void setBRDF(BRDF new_brdf);
-	float getShiness();
-	void setShiness(float s);
 	
 	// general properties
 	Point center;
-	Material material;
+	MaterialBase material;
 	Transformation worldToObject = Transformation(1.0);
 	Transformation objectToWorld = Transformation(1.0);
 

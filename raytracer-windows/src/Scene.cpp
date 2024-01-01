@@ -30,7 +30,7 @@ void Scene::render() {
 			Vector dir = Point(dir_h.x, dir_h.y, dir_h.z);
 			Ray ray_world = Ray(pos, dir); // ray in world coordinate
 			
-			Color c = Color(0.0, 0.0, 0.0, 1.0f);
+			Color c = Color(0.0, 0.0, 0.0);
 			raytracer.traceRay(ray_world, 0, c);
 			film.commit(px, c);
 		}

@@ -41,7 +41,8 @@ bool Sphere::intersect(const Ray& ray, Intersection *result) {
 		if (result != nullptr) {
 			result->dist = t;
 			result->hitPosition = p + d * result->dist;
-			result->normalVec = glm::normalize(result->hitPosition - o);
+			Vector normal = glm::normalize(result->hitPosition - o);
+			result->outward_normal = (glm::dot(normal, ray.direction) >= 0)? -normal : normal;
 			result->hitPrimitive = this;
 		}
 		return true;

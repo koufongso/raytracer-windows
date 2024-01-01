@@ -5,5 +5,5 @@ DirectionalLight::DirectionalLight(Vector direction) {
 }
 
 Ray DirectionalLight::generateRayLight(Point ray_origin) {
-	return Ray(ray_origin, -direction);
+	return Ray(ray_origin, glm::normalize(-direction));
 }

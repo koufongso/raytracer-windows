@@ -33,11 +33,14 @@
     <ClInclude Include="include\Primitives\Triangle.h" />
     <ClInclude Include="include\Ray.h" />
     <ClInclude Include="include\RayTracer.h" />
+    <ClInclude Include="include\RayTracingStructs.h" />
     <ClInclude Include="include\Sampler.h" />
     <ClInclude Include="include\Scene.h" />
     <ClInclude Include="include\Typedefs.h" />
+    <ClInclude Include="include\Materials\MaterialBase.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Materials\MaterialBase.cpp" />
     <ClCompile Include="src\Camera.cpp" />
     <ClCompile Include="src\Film.cpp" />
     <ClCompile Include="src\Lights\DirectionalLight.cpp" />

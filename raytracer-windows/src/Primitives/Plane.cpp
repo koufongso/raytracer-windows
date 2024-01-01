@@ -28,7 +28,7 @@ bool Plane::intersect(const Ray& ray, Intersection* result) {
 		if (result != nullptr) {
 			result->dist = sol.x;
 			result->hitPosition = ray.position + sol.x * ray.direction;
-			result->normalVec = normal;
+			result->outward_normal = glm::dot(normal,ray.direction)>=0? -normal: normal;
 			result->hitPrimitive = this;
 		}
 		return true;

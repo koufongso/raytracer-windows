@@ -15,9 +15,10 @@ public:
 
 	// some helper function
 	bool intersectObjects(const Ray& ray);								// check if a ray hit an object in the ob
-	bool intersectObjects(const Ray& ray, Intersection *ressult);		// check if a ray hit an object and return the result
+	bool intersectObjects(const Ray& ray, Intersection *result);		// check if a ray hit an object and return the result
+	bool intersectOpaqueObjects(const Ray& ray, Color *color_modifier);	// check if a shadow ray is occluded
 
-	int MAX_DEPTH = 3;
+	int MAX_DEPTH = 10;
 	std::vector<LightBase*> *light_sources;
 	std::vector<PrimitiveBase*> *objects;
 

@@ -38,7 +38,7 @@ bool Triangle::intersect(const Ray& ray, Intersection *result) {
 		if (result != nullptr) {
 			result->dist = t;
 			result->hitPosition = p + t * d;
-			result->normalVec = normal; // counterclock-wise
+			result->outward_normal = glm::dot(normal,ray.direction)>=0? -normal: normal;
 			result->hitPrimitive = this;
 		}
 		return true;

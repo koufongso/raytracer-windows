@@ -1,5 +1,6 @@
 #pragma once
 # include "Typedefs.h"
+# include "RayTracingStructs.h"
 
 class Sampler
 {

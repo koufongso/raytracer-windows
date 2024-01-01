@@ -6,7 +6,6 @@ public:
 	PointLight(Point position);
 	Ray generateRayLight(Point ray_origin) override;
 
-	Color color;
 	Point position;
 };
 

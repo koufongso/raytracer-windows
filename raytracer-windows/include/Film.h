@@ -2,7 +2,7 @@
 #include <glm/glm.hpp>
 #include "Typedefs.h"
 #include "FreeImage.h"
-#include <String.h>
+#include "RayTracingStructs.h"
 
 class Film
 {
