@@ -10,7 +10,7 @@ void Camera::moveToGlobal(const Point& newEye) {
 
 Ray Camera::createRay(Pixel px) {
 
-	Sample sample = this->sampler.getSample(px.j, px.i);
+	Sample sample = this->sampler.sample(px.j, px.i);
 
 	Point p;
 	p.x = (sample.u - w_half) * tan_fovx_2 / w_half;

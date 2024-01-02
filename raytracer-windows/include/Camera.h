@@ -12,6 +12,7 @@ class Camera
 public:
 
 	Ray createRay(Pixel px); // create a ray for pixel (u,v)
+	Ray createRayRandom(Pixel px);
 
 	// set camera pose and image
 	void setWorldToCam(const Transformation& T);

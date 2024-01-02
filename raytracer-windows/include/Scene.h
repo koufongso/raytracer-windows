@@ -20,6 +20,9 @@ public:
 	std::vector<LightBase*> light_sources;
 
 	RayTracer raytracer;
+	bool anti_aliasing = false;
+	int sample_per_pixel = 1;
+	int sample_per_pixel_anti_aliasing = 3;
 
 };
 
