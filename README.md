@@ -2,8 +2,8 @@
 
 Raytracing learning project.
 
-## Shading methods
-Phong shading model (old implementation)            |  Whitted shading model (current implementation)
+## Raytracing methods
+Phong shading + trace reflection ray (old implementation)            | (Whitted) Phong shading (only diffuse term) + trace relection ray + trace refraction ray (current implementation)
 :-------------------------:|:-------------------------:
 ![](./raytracer-windows/demo/test_phong.png)  |  ![](./raytracer-windows/demo/test_whitted.png)
 
